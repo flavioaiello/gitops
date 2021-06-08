@@ -1,0 +1,8 @@
+apiVersion: container.gcp.crossplane.io/v1beta1
+kind: GKECluster
+metadata:
+  name: eac
+spec:
+  forProvider:
+    location: us-east1
+    initialClusterVersion: latest

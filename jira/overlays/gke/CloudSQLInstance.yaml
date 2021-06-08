@@ -1,0 +1,10 @@
+apiVersion: database.gcp.crossplane.io/v1beta1
+kind: CloudSQLInstance
+metadata:
+  name: jira-db
+  namespace: production
+spec:
+  forProvider:
+    region: us-east1
+    settings:
+      tier: db-n1-standard-1
